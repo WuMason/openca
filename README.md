@@ -16,8 +16,8 @@
 *Server:*  
   Ubuntu 12.04
 
-##Setup:  
-###1.openssl
+## Setup:  
+### 1.openssl
 ```
   ./config shared --prefix=/home/Mason/work/openssl
   
@@ -29,20 +29,20 @@
 ```  
   Now,your opepnssl version is 1.0.2k
   
-###2.apache
+### 2.apache
 ```
   ./configure --prefix=/home/Mason/work/httpd-2.2.32 --enable-mods-shared=most \
   --with-mpm-MPM=worker --enable-ssl --with-ssl=/home/Mason/work/openssl
   
   make && make install
 ```  
-###3.openca-tools-1.3.1
+### 3.openca-tools-1.3.1
 ```
   ./configure --prefix=/home/Mason/work/openca-tools
   
   make & make install
 ```  
-###4.openca-base.1.5.1
+### 4.openca-base.1.5.1
 ```
   ./configure  --prefix="/home/Mason/work/openca-base" --with-openca-tools-prefix=/home/Mason/work/openca-tools \
   --with-openssl-prefix=/home/Mason/work/openssl --with-ca-organization=Mason --with-db-name=xx --with-db-host=xx.xx.xx.xx \
@@ -58,7 +58,7 @@
 
   cd /home/Mason/work/openca-base/etc/openca && ./configure_etc.sh
 ```  
-**Now, you can open openca !**
+Now, you can open openca !
 ```
   /home/Mason/work/openca-base/etc/init.d/openca start 
 ```  
@@ -71,7 +71,10 @@ You also need close server's apche2 and start your apache ..
    /home/Mason/work/httpd-2.2.32/bin/apachectl restart
 ```   
 Finally , enter IP/pki in google,you can find your openca
-  
+e.g:
+127.0.0.1/pki/ca
+127.0.0.1/pki/ra
+127.0.0.1/pki/pub
   
   
   
