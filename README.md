@@ -45,7 +45,7 @@
 ###4.openca-base.1.5.1
 ```
   ./configure  --prefix="/home/Mason/work/openca-base" --with-openca-tools-prefix=/home/Mason/work/openca-tools \
-  --with-openssl-prefix=/home/neldtv/work/openssl --with-ca-organization=Mason --with-db-name=xx --with-db-host=xx.xx.xx.xx \
+  --with-openssl-prefix=/home/Mason/work/openssl --with-ca-organization=Mason --with-db-name=xx --with-db-host=xx.xx.xx.xx \
   --with-db-user=root --with-db-passwd="openca" --with-db-type=mysql --with-web-host=localhost \
   --with-httpd-fs-prefix=/home/Mason/work/httpd-2.2.32 --with-htdocs-fs-prefix=/home/Mason/work/httpd-2.2.32/htdocs/pki \
   --with-module-prefix=/home/Mason/work/openca-base/modules -with-httpd-user=daemon --with-httpd-group=daemon
@@ -64,7 +64,7 @@
 ```  
 *The first time you need to enter a password !*
 
-You also need close apche2 and start your apache ..
+You also need close server's apche2 and start your apache ..
 ```
    service apache2 stop
    
