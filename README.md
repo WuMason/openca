@@ -58,19 +58,19 @@
 
   cd /home/Mason/work/openca-base/etc/openca && ./configure_etc.sh
 ```  
-Now, you can open openca !
+### 5.Now, you can open openca !
 ```
   /home/Mason/work/openca-base/etc/init.d/openca start 
 ```  
 *The first time you need to enter a password !*
 
-You also need close server's apche2 and start your apache ..
+### 6.You also need close server's apche2 and start your apache ..
 ```
    service apache2 stop
    
    /home/Mason/work/httpd-2.2.32/bin/apachectl restart
 ```   
-Finally , enter IP/pki in google,you can find your openca
+### 7.Finally , enter IP/pki in google,you can find your openca
 e.g:
 127.0.0.1/pki/ca
 127.0.0.1/pki/ra
