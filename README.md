@@ -1,5 +1,5 @@
 # PKI OPENCA
-**Build your PKI by openca ! **
+**Build your PKI by openca !**
 
 *Tools:*
 
